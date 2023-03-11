@@ -11,21 +11,21 @@ job1:
   script:
     - echo job in test
 
-job1:
+job2:
   tags:
     - aa
   stage: install
   script:
     - echo job in install
 
-job1:
+job3:
   tags:
     - aa
   stage: build
   script:
     - echo job in build
 
-job1:
+job4:
   tags:
     - aa
   stage: prod
