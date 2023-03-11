@@ -1,5 +1,33 @@
+states:
+  - install
+  - build
+  - test
+  - prod
+
 job1:
   tags:
     - aa
+  stage: test
   script:
-    - echo hello
+    - echo job in test
+
+job1:
+  tags:
+    - aa
+  stage: install
+  script:
+    - echo job in install
+
+job1:
+  tags:
+    - aa
+  stage: build
+  script:
+    - echo job in build
+
+job1:
+  tags:
+    - aa
+  stage: prod
+  script:
+    - echo job in prod
