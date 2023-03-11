@@ -1,0 +1,33 @@
+stages:
+  - install
+  - build
+  - test
+  - prod
+
+job1:
+  tags:
+    - aa
+  stage: test
+  script:
+    - echo job in test
+
+job2:
+  tags:
+    - aa
+  stage: install
+  script:
+    - echo job in install
+
+job3:
+  tags:
+    - aa
+  stage: build
+  script:
+    - echo job in build
+
+job4:
+  tags:
+    - aa
+  stage: prod
+  script:
+    - echo job in prod
