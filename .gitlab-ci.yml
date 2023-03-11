@@ -6,4 +6,4 @@ job2:
     - aa
   stage: install
   script:
-    - deno eval 'console.log(123)'
+    - ~/.deno/bin/deno eval 'console.log(123)'
