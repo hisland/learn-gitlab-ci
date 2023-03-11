@@ -1,3 +1,5 @@
 job1:
+  tags:
+    - aa
   script:
     - echo hello
