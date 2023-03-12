@@ -1,3 +1,8 @@
+# executor
+
+- shell executor 相当于在命令行环境执行程序
+- docker executor 在 docker 容器里面执行程序
+
 # cache
 
 - cache 是 GitLab 15.0 才有的特性, 之前得用其它方法
