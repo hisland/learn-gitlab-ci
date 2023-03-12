@@ -1,24 +1,22 @@
-variables:
-  VAR1: "default var1"
-
-workflow:
-  name: my-workflow
-  rules:
-    - if: $CI_COMMIT_TAG =~ /^v.*/
-      variables:
-        VAR1: "tag build var1"
-    - if: $CI_COMMIT_MESSAGE =~ /normal commit/
-      variables:
-        VAR1: "normal commit var1"
-
 stages:
   - install
+
+job1:
+  tags:
+    - aa
+  stage: install
+  script:
+    - file my-file
+    - echo some >> my-file
+    - file my-file
+    - cat my-file
 
 job2:
   tags:
     - aa
   stage: install
   script:
-    - cat thing
-    - echo some >> thing
-    - echo $VAR1
+    - file my-file
+    - echo some >> my-file
+    - file my-file
+    - cat my-file
