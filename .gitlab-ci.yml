@@ -1,5 +1,6 @@
 stages:
   - install
+  - test
 
 job1:
   tags:
@@ -18,7 +19,7 @@ job1:
 job2:
   tags:
     - aa
-  stage: install
+  stage: test
   script:
     - file my-file
     - echo $RANDOM >> my-file
