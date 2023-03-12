@@ -12,7 +12,7 @@ job1:
     - file my-file
     - cat my-file
   cache:
-    key: file1
+    key: file2
     paths:
       - my-file
 
@@ -26,6 +26,6 @@ job2:
     - file my-file
     - cat my-file
   cache:
-    key: file1
+    key: file2
     paths:
       - my-file
