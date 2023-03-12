@@ -7,7 +7,7 @@ job1:
   stage: install
   script:
     - file my-file
-    - echo some >> my-file
+    - echo $RANDOM >> my-file
     - file my-file
     - cat my-file
 
@@ -17,6 +17,6 @@ job2:
   stage: install
   script:
     - file my-file
-    - echo some >> my-file
+    - echo $RANDOM >> my-file
     - file my-file
     - cat my-file
