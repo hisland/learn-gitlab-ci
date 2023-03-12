@@ -13,10 +13,3 @@ job1:
     name: my-files
     paths:
       - my-file
-
-job2:
-  tags:
-    - aa
-  stage: test
-  script:
-    - cat my-file
