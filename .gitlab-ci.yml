@@ -3,8 +3,8 @@ stages:
 
 job1:
   tags:
-    - aa
+    - 201-shell-root
   stage: install
   script:
-    - echo $RANDOM >> ~/my-file
-    - cat ~/my-file
+    - echo $RANDOM >> /my-file
+    - cat /my-file

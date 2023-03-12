@@ -1,0 +1,10 @@
+stages:
+  - install
+
+job1:
+  tags:
+    - aa
+  stage: install
+  script:
+    - echo $RANDOM >> ~/my-file # 把内容写入到外部去, 可以当缓存什么的
+    - cat ~/my-file
