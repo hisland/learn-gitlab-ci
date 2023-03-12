@@ -1,10 +1,25 @@
 stages:
   - install
+  - test
 
 job1:
   tags:
-    - docker
+    - aa
   stage: install
+  script:
+    - file my-file
+    - echo $RANDOM >> my-file
+    - file my-file
+    - cat my-file
+  cache:
+    key: file2
+    paths:
+      - my-file
+
+job2:
+  tags:
+    - aa
+  stage: test
   script:
     - file my-file
     - echo $RANDOM >> my-file
