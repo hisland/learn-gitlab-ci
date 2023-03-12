@@ -6,5 +6,5 @@ job1:
     - aa
   stage: install
   script:
-    - echo $RANDOM >> /my-file
-    - cat /my-file
+    - echo $RANDOM >> ~/my-file
+    - cat ~/my-file
