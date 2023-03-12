@@ -24,7 +24,3 @@ job2:
     - echo $RANDOM >> my-file
     - file my-file
     - cat my-file
-  cache:
-    key: file1
-    paths:
-      - my-file
