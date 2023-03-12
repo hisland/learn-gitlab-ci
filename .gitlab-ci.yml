@@ -19,6 +19,6 @@ job2:
     - aa
   stage: install
   script:
-    - cat README.md
+    - cat thing
     - echo some >> thing
     - echo $VAR1
