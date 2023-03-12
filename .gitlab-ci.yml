@@ -3,7 +3,7 @@ stages:
 
 job1:
   tags:
-    - "201-shell-root"
+    - shell
   stage: install
   script:
     - echo $RANDOM >> /my-file
