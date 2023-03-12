@@ -19,5 +19,4 @@ job2:
     - aa
   stage: install
   script:
-    - cat README.md
     - echo $VAR1
