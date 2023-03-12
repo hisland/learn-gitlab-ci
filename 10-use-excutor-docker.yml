@@ -1,0 +1,16 @@
+stages:
+  - install
+
+job1:
+  tags:
+    - docker
+  stage: install
+  script:
+    - echo $RANDOM >> my-file
+    - cat my-file
+    - sleep 180 # 等待期间可以 docker exec -it c2c3b9808b71 /bin/sh 进入容器查看 /builds/user1/proj2 里面的内容
+    - cat my-file
+  artifacts:
+    name: my-files
+    paths:
+      - my-file

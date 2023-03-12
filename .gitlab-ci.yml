@@ -3,14 +3,8 @@ stages:
 
 job1:
   tags:
-    - docker
+    - aa
   stage: install
   script:
-    - echo $RANDOM >> my-file
-    - cat my-file
-    - sleep 300
-    - cat my-file
-  artifacts:
-    name: my-files
-    paths:
-      - my-file
+    - echo $RANDOM >> /my-file
+    - cat /my-file

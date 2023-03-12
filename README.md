@@ -1,7 +1,7 @@
 # executor
 
-- shell executor 相当于在命令行环境执行程序
-- docker executor 在 docker 容器里面执行程序
+- shell executor 相当于在 gitlab-runner register 执行的环境命令行执行程序
+- docker executor 相当于在 gitlab-runner register 执行的环境运行的 docker 容器里面执行程序
 
 # cache
 
