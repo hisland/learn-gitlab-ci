@@ -20,4 +20,5 @@ job2:
   stage: install
   script:
     - cat README.md
+    - echo some >> thing
     - echo $VAR1
