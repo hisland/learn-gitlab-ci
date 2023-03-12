@@ -10,4 +10,4 @@ job2:
   stage: install
   script:
     - echo $VAR1
-    - export
+    - export # 打印出所有变量列表

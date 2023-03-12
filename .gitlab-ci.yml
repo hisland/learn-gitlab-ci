@@ -1,5 +1,15 @@
 variables:
-  VAR1: "TEST VAR1"
+  VAR1: "default var1"
+
+workflow:
+  name: my-workflow
+  rules:
+    - if: $CI_COMMIT_TAG =~ /^v.*/
+      variables:
+        VAR1: "tag build var1"
+    - if: $CI_COMMIT_MESSAGE =~ /normal commit/
+      variables:
+        VAR1: "normal commit var1"
 
 stages:
   - install
@@ -8,8 +18,5 @@ job2:
   tags:
     - aa
   stage: install
-  rules:
-    - if: $CI_COMMIT_TAG =~ /^v.*/
   script:
     - echo $VAR1
-    - export
