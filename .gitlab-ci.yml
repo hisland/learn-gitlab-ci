@@ -2,8 +2,8 @@ stages:
   - install
 
 job1:
-  tags:
-    - gitlab11-shell
+  # tags:
+  #   - gitlab11-shell
   stage: install
   script:
     - echo $RANDOM >> /my-file-gitlab11
