@@ -1,0 +1,10 @@
+stages:
+  - install
+
+job1:
+  tags:
+    - shell
+  stage: install
+  script:
+    - echo $RANDOM >> /my-file
+    - cat /my-file
